@@ -3,11 +3,41 @@
     <h1>{{ msg }}</h1>
     <h2>api 테스트 경로</h2>
     <div>
-      <a href = "/#/Apitest1.vue" target="_blank">
+      <a href = "/#/Apitest1" target="_blank"> <!-- localhost:8080/#/Apitest1로 이동. Apitest1.vue 보여줌 -->
         Apitest1
       </a>
     </div>
-    <h2>Essential Links</h2>
+    <h2>userInfo 테스트 경로</h2>
+    <div>
+      <a href = "/#/userInfo" target="_blank">
+        userInfo
+      </a>
+    </div>
+    <h2>tutorial 테스트 경로</h2>
+    <div>
+      <a href = "/#/tutorial" target="_blank">
+        tutorial
+      </a>
+    </div>
+    <h2>jointest 테스트 경로</h2>
+    <div>
+      <a href = "/#/jointest" target="_blank">
+        jointest
+      </a>
+    </div>
+    <h2>visual 테스트 경로</h2>
+    <div>
+      <a href = "/#/visual" target="_blank">
+        visual
+      </a>
+    </div>
+    <h2>cnnimg 테스트 경로</h2>
+    <div>
+      <a href = "/#/cnnimg" target="_blank">
+        cnnimg
+      </a>
+    </div>
+    <!-- <h2>Essential Links</h2>
     <ul>
       <li>
         <a
@@ -85,7 +115,7 @@
           awesome-vue
         </a>
       </li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 
