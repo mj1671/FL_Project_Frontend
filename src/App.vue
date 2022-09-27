@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/logo.png"> <!-- 화면에 뜨는 로고이미지 -->
     <router-view/>
   </div>
 </template>

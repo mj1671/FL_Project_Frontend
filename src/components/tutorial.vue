@@ -3,8 +3,10 @@
         <h1>{{ msg }}</h1>
         title : <input v-model="title" placeholder="title 입력하세요" > <!-- placeholder에 입력한 값이 script에서 this.title 이 됨-->
         description : <input v-model="description" placeholder="description 입력하세요"> <!-- placeholder에 입력한 값이 script에서 this.description 이 됨-->
+        <br></br>
         <!-- <button @click.stop="apievent">요청</button> -->
         <b-button variant="outline-dark" @click.stop="apievent">요청</b-button>
+        <br></br>
         <h2>api 요청 결과 값 : {{apiresult}}</h2> <!-- this.apiresult에 넣어준 data를 출력함 -->
     </div>
 </template>

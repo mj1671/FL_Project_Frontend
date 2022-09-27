@@ -2,7 +2,9 @@
     <div>
         <h1>{{ msg }}</h1>
         <h2>api 요청 결과 값 : {{apiresult}}</h2>
-        <button @click.stop="apievent">요청</button>
+        <br></br>
+        <!-- <button @click.stop="apievent">요청</button> -->
+        <b-button variant="outline-dark" @click.stop="apievent">요청</b-button>
     </div>
 </template>
 

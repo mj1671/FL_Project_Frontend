@@ -6,6 +6,7 @@ import userInfo from '@/components/userInfo' //
 import tutorial from '@/components/tutorial' //
 import jointest from '@/components/jointest' //
 import visual from '@/components/visual' //
+import board from '@/components/board' //
 import cnnimg from '@/components/cnnimg' //
 
 Vue.use(Router)
@@ -41,6 +42,11 @@ export default new Router({
       path: '/visual',
       name: 'visual',
       component: visual
+    },
+    {
+      path: '/board',
+      name: 'board',
+      component: board
     },
     {
       path: '/cnnimg',
