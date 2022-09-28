@@ -49,7 +49,7 @@
         </td>
         <td>
           <!-- <td v-for="field in fields" :key="field.key"> -->
-          <b-form-input  readonly v-if="selectMode == 'single'" v-model="insertitem1" placeholder=No></b-form-input>
+          <b-form-input  readonly v-if="selectMode == 'single'" v-model:value="insertitem1" placeholder=No></b-form-input>
           <b-form-input v-else v-model="insertitem1" placeholder="id 입력"></b-form-input>
         </td>
         <td>
@@ -161,11 +161,7 @@ export default {
         //console.log(this.selectMode)
         
         this.showinsert = true
-        // this.insertitem1= this.selected[0].id
-        // this.insertitem2= this.selected[0].title
-        // this.insertitem3= this.selected[0].writer
-        // this.insertitem4= this.selected[0].date
-        
+        //저장으로 넘김
         /*
         //const {data} = await this.$axios.get('http://localhost:3010/api/board/change?id=' + this.selected) //?파라미터
         //console.log(this.items)
@@ -183,9 +179,14 @@ export default {
 
 
     onRowSelected(items) {
-        // if(this.selectMode == 'single') {
-        // this.selected = items
-        // }
+        if(this.selectMode == 'single') {
+        this.selected = items
+        this.insertitem1= this.selected[0].id
+        this.insertitem2= this.selected[0].title
+        this.insertitem3= this.selected[0].writer
+        this.insertitem4= this.selected[0].date
+        }
+
         this.selected = []
         for(let i=0; i<items.length; i++){
         this.selected.push(items[i].id) // front(vue)에 행 선택했을때 몇개뜨는지 items[0]하면 제일 처음 선택한 한개만 뜸
