@@ -49,7 +49,7 @@
         </td>
         <td>
           <!-- <td v-for="field in fields" :key="field.key"> -->
-          <b-form-input  readonly v-if="selectMode == 'single'" v-model:value="insertitem1" placeholder=No></b-form-input>
+          <b-form-input  readonly v-if="selectMode == 'single'" v-model="insertitem1" placeholder=No></b-form-input>
           <b-form-input v-else v-model="insertitem1" placeholder="id 입력"></b-form-input>
         </td>
         <td>
@@ -179,9 +179,9 @@ export default {
 
 
     onRowSelected(items) {
-        if(this.selectMode == 'single') {
+        if(this.selectMode == 'single') { //수정 버튼 눌렀을때 single 모드 선택하나만
         this.selected = items
-        this.insertitem1= this.selected[0].id
+        this.insertitem1= this.selected[0].id //수정버튼 누르고 행 선택했을때 input 박스에 값이 들어가도록 만듬
         this.insertitem2= this.selected[0].title
         this.insertitem3= this.selected[0].writer
         this.insertitem4= this.selected[0].date
